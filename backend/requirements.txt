@@ -1,11 +1,10 @@
 fastapi
 uvicorn
 python-multipart
-opencv-python
+opencv-python-headless
 numpy
 torch
 torchvision
-matplotlib
 pillow
 scikit-image
 google-generativeai

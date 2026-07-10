@@ -49,3 +49,9 @@ Thumbs.db
 
 # Data and large models
 data/
+
+# ML training artifacts
+ml/plots/
+
+# Python Virtual Env
+.venv/
