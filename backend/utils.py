@@ -12,6 +12,8 @@ from typing import Optional
 
 # Gemini Configuration
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if not GEMINI_API_KEY:
+    raise RuntimeError("GEMINI_API_KEY environment variable is not set.")
 genai.configure(api_key=GEMINI_API_KEY)
 chat_model = genai.GenerativeModel('gemini-2.5-flash')
 
